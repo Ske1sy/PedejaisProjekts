@@ -1,1 +1,73 @@
+body {
+    background-color: #f8f9fa;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 600px;
+    margin: 80px auto;
+    background-color: #ffffffcf;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
 
+}
+form div {
+    margin-bottom: 20px;
+}
+.option {
+    text-align: center;
+    padding-left: 100px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+#age, #weight, #height, #goal {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.dzimums {
+    text-align: center;
+}
+
+.male {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.female {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.button {
+    font-family: "Open Sans", sans-serif;
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #424242;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+.button:hover {
+    background-color: #000000;
+}
