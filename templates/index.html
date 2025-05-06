@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uztura ieteikumi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='first_style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>Uztura ieteikumi</h1>
+    <form method="POST" action="/recommend">
+        <div>
+            <label for="goal">Mērķis</label>
+            <select name="goal" id="goal" required>
+                <option value="lose" class="option">Zaudēt svaru</option>
+                <option value="gain" class="option">Palielināt masu</option>
+                <option value="maintain" class="option">Uzturēt svaru</option>
+            </select>
+        </div>
+        <div>
+            <label for="weight">Svars (kg)</label>
+            <input type="number" name="weight" id="weight" min="4" required> <!-- Izmantojas cilvēka minimālais svars (aptuvenais) -->
+        </div>
+        <div>
+            <label for="height">Augums (cm)</label>
+            <input type="number" name="height" id="height" min="55" required> <!-- Izmantojas cilvēka minimālais augums -->
+        </div>
+        <div>
+            <label for="age">Vecums</label>
+            <input type="number" name="age" id="age" min="1" required> <!-- Izmantojas cilvēka minimālais vecums -->
+        </div>
+        <div class="dzimums">
+            <label>Dzimums</label>
+            <div class="male">
+                <input type="radio" name="gender" id="male" value="male" required>
+                <label for="male">Vīrietis</label>
+            </div>
+            <div class="female">
+                <input type="radio" name="gender" id="female" value="female" required>
+                <label for="female">Sieviete</label>
+            </div>
+        </div>
+        <button type="submit" class="button">Iegūt ieteikumu</button>
+    </form>
+</div>
+</body>
+</html>
 
